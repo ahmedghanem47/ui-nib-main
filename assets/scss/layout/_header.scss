@@ -1,0 +1,102 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .navbar-brand {
+    margin-right: unset;
+  }
+
+  .nav-container {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+
+    padding: 10px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* إضافة تأثير التحول */
+
+    ul {
+      li {
+        a {
+          color: black;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-flex;
+          align-items: flex-start;
+          gap: 1rem;
+          &:hover {
+            color: $brand-primary !important;
+          }
+        }
+      }
+    }
+  }
+  nav.scrolled {
+    background-color: white; /* Change this color on scroll */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    color: $brand-primary !important;
+
+    ul li a {
+      color: $brand-primary !important;
+    }
+  }
+  .left-side {
+    gap: 0.75rem;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block; /* يظهر القائمة عند التحويم */
+    margin: 30px 0;
+    border: none;
+  }
+
+  .dropdown-toggle::after {
+    content: "";
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    // div.flex-fill {
+    //   flex: 0 !important;
+    // }
+
+    .navbar-nav-scroll {
+      text-align: start !important;
+    }
+    .navbar-toggler {
+      display: flex;
+      border: none;
+    }
+
+    .contant-ul {
+      padding: 10px;
+    }
+    nav {
+      background-color: $pure-white;
+    }
+  }
+
+  .navbar-respon {
+    justify-content: flex-end !important;
+
+    a:nth-child(1),
+    a:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .header-content {
+    flex-direction: column;
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+}

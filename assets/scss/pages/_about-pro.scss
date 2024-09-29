@@ -1,0 +1,37 @@
+.aboutProject-page {
+  background-image: url("./../../images/bunnar/bu1.svg");
+  background-size:cover;
+  
+  .project-container {
+    .project-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .project-subtitle {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .project-list,
+    .project-goals {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        text-indent: -15px;
+
+        &::before {
+          content: "•";
+          color: #333;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

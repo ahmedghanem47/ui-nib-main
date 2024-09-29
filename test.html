@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet"
+            href="./style/vendor/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./style/css/styles.css" />
+        <style>
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Source+Sans+Pro:300,700&display=swap");
+h1 { 
+  font-family: 'Libre Baskerville', "Times New Roman", serif; 
+  font-size: 32px;
+}
+  h2 { 
+    font-family: 'Libre Baskerville', "Times New Roman", serif; 
+    font-size: 28px; 
+}
+  h3 { 
+    font-family: 'Libre Baskerville', "Times New Roman", serif; 
+    font-size: 24px; 
+}
+  h4 { 
+    font-family: 'Libre Baskerville', "Times New Roman", serif; 
+    font-size: 22px; 
+}
+  h5 { 
+    font-family: 'Libre Baskerville', "Times New Roman", serif; 
+    font-size: 18px; 
+}
+  p { 
+    font-family: 'Source Sans Pro', "Arial", sans-serif; 
+    font-size: 20px; 
+    margin: 0; 
+}
+  .h-100vh { 
+    height: 100vh; 
+}
+  .sub-text { 
+    font-family: 'Source Sans Pro', "Arial", sans-serif; 
+    font-size: 24px; 
+}
+  .owl-theme .owl-controls .owl-buttons .owl-prev { 
+    margin-left: -6%; 
+}
+  .owl-theme .owl-controls .owl-buttons .owl-next { 
+    margin-right: -5%; 
+}
+
+ .owl-carousel.main-carousel h2 { 
+    font-family: 'Source Sans Pro', "Arial", sans-serif; 
+    font-size: 50px; 
+    line-height: 1; 
+}
+  .owl-carousel.main-carousel h2 span { 
+    font-size: 53px; 
+    font-weight: 600; 
+}
+  .main-carousel .slider-img { 
+    width: 100%; 
+}
+  .main-carousel .slider-img img { 
+    margin: auto 0; 
+}
+  .carousel-wrap { 
+    margin: 90px auto; 
+    padding: 0 5%; 
+    width: 80%; 
+    position: relative; 
+}
+
+.carousel-control { 
+  background: none !important; 
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item { 
+  position: relative; 
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+.owl-carousel.main-carousel .owl-dots { 
+  text-align: center; 
+  padding-top: 10px; 
+}
+
+/*-----slider-------*/
+.owl-carousel.main-carousel .owl-dots .owl-dot { 
+  border-radius: 50%; 
+  width: 15px; 
+  height: 15px; 
+  margin-left: 2px; 
+  margin-right: 2px; 
+  background: #ccc; 
+  border: none; 
+}
+
+.owl-carousel.main-carousel .owl-dots .owl-dot.active, .owl-carousel.main-carousel .owl-dots .owl-dot:hover { 
+  background: #1AA8E2; 
+}
+.owl-nav > div { 
+  margin-top: -26px; 
+  position: absolute; 
+  top: 50%; 
+  color: #cdcbcd; 
+}
+.owl-nav i { 
+  font-size: 52px; 
+}
+div.owl-buttons { 
+  display: table; 
+  height: 15vh; 
+}
+.owl-buttons { display: block; }
+
+.owl-carousel:hover .owl-buttons { display: block; }
+
+.carousel-inner { overflow: visible; }
+
+.owl-item { text-align: center; }
+
+.owl-theme .owl-controls .owl-buttons div { background: transparent; color: #869791; font-size: 40px; line-height: 300px; margin: 0; position: absolute; top: 0; }
+
+.owl-theme .owl-controls .owl-buttons .owl-prev { left: 0; margin-left: -8%; }
+
+.owl-theme .owl-controls .owl-buttons .owl-next { right: 0; margin-right: -8%; }
+    </style>
+    </head>
+    <body dir="rtl">
+        <header>
+            <nav id="navbar" class="navbar navbar-expand-lg  navbar-fixed-top">
+                <div
+                    class="container d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand h1" href="index.html">
+                        <img src="../images/home/nav-logo.png" alt>
+                    </a>
+                    <button class="navbar-toggler border-0" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-toggler-success"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div
+                        class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+                        id="navbar-toggler-success">
+                        <div class="m-auto">
+                            <ul
+                                class="nav navbar-nav d-flex mx-xl-5 text-center text-dark">
+                                <li class="nav-item"><a
+                                        class="nav-link btn-outline-primary rounded-pill px-3"
+                                        href="index.html">الرئيسيه</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link btn-outline-primary rounded-pill px-3"
+                                        href="about.html">عن البنك</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link btn-outline-primary rounded-pill px-3"
+                                        href="work.html">الانشطه</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link btn-outline-primary rounded-pill px-3"
+                                        href="pricing.html">الانجازات</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link btn-outline-primary rounded-pill px-3"
+                                        href="contact.html">المتابعات
+                                        الميدانية</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link btn-outline-primary rounded-pill px-3"
+                                        href="contact.html">النماذج</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link btn-outline-primary rounded-pill px-3"
+                                        href="contact.html">التشريعات</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link btn-outline-primary rounded-pill px-3"
+                                        href="contact.html">الاعلام</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="navbar">
+                            <a class="nav-link lang-btn" href="#"> EN </a>
+                            <a class="nav-link mx-2" href="#"><i
+                                    class='bx bx-search bx-sm bx-tada-hover'></i></a>
+                            <a class="main-button login-btn" href="#">تسجيل
+                                الدخول<i
+                                    class='bx bx-arrow-to-left bx-sm bx-tada-hover'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div
+                    class="h-100vh slider-wrapper d-xl-flex align-items-center">
+                    <div class="owl-carousel main-carousel" dir="ltr">
+                        <div class="item slide1">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <h2 class="pl-3 pr-3 text-left">Steer
+                                            Your<br>
+                                            <span>Vision</span></h2>
+                                        <div
+                                            class="slider-img d-block d-sm-none"><img
+                                                alt="Steer Your Vision"
+                                                class="img-fluid"
+                                                height="400px"
+                                                src="https://finbyz.tech/files/steer-your-vision.svg"
+                                                title="Steer Your Vision"></div>
+                                        <p class="p-3">We believe technology can
+                                            be the light house which you can be
+                                            used to
+                                            navigate towards your goals. It can
+                                            also be the boat (A tool) that you
+                                            can use
+                                            to reach your goals faster. Using
+                                            latest technology, we steer our
+                                            clients from
+                                            where they are to where their Vision
+                                            aspires them to be.</p>
+                                        <div class="text-left pl-4 pr-4">
+                                            <a
+                                                href="https://finbyz.tech/steer-your-vision"><button
+                                                    class="btn finbyz-button">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="slider-img d-none d-sm-flex justify-content-center"><img
+                                                alt="Steer Your Vision"
+                                                class="img-fluid" height="400px"
+                                                src="https://finbyz.tech/files/steer-your-vision.svg"
+                                                title="Steer Your Vision">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slide1">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <h2 class="pl-3 pr-3 text-left">ERP<br>
+                                            <span>Implementation</span></h2>
+                                        <div
+                                            class="slider-img d-block d-sm-none"><img
+                                                alt="ERP Implementation"
+                                                class="img-fluid"
+                                                height="400px"
+                                                src="https://finbyz.tech/files/erp-implements.svg"
+                                                title="ERP Implementation"></div>
+                                        <p class="p-3">We help you to adapt to
+                                            this digital transformation by
+                                            understanding
+                                            the current processes as well as
+                                            problems of your company and
+                                            suggesting the
+                                            best ERP software to maximize your
+                                            gain. We don’t just act as ERP
+                                            suppliers,
+                                            instead we also give necessary
+                                            training to use the ERP Software
+                                            efficiently.</p>
+                                        <div class="text-left pl-4 pr-4">
+                                            <a
+                                                href="https://finbyz.tech/erp-software"><button
+                                                    class="btn finbyz-button">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="slider-img d-none d-sm-flex justify-content-center"><img
+                                                alt="ERP Implementation"
+                                                class="img-fluid" height="400px"
+                                                src="https://finbyz.tech/files/erp-implements.svg"
+                                                title="ERP Implementation"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slide1">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <h2
+                                            class="pl-3 pr-3 text-left">Software<br>
+                                            <span>Development</span></h2>
+                                        <div
+                                            class="slider-img d-block d-sm-none"><img
+                                                alt="Software Development Service"
+                                                class="img-fluid" height="400px"
+                                                src="https://finbyz.tech/files/software-development.svg"
+                                                title="Software Development Service"></div>
+                                        <p class="p-3">We provide customized
+                                            Software Development service to meet
+                                            your
+                                            unique business needs. We create
+                                            tailored software solutions to solve
+                                            your
+                                            specific problems. The software is
+                                            designed as per your business
+                                            processes to
+                                            satisfy your exclusive needs of
+                                            making your workflow easier, faster,
+                                            and more
+                                            efficient.</p>
+                                        <div class="text-left pl-4 pr-4">
+                                            <a
+                                                href="https://finbyz.tech/software-development"><button
+                                                    class="btn finbyz-button">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="slider-img d-none d-sm-flex justify-content-center"><img
+                                                alt="Software Development Service"
+                                                class="img-fluid" height="400px"
+                                                src="https://finbyz.tech/files/software-development.svg"
+                                                title="Software Development Service">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slide1">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <h2
+                                            class="pl-3 pr-3 text-left">Website<br>
+                                            <span>Development</span></h2>
+                                        <div
+                                            class="slider-img d-block d-sm-none"><img
+                                                alt="Website Development"
+                                                class="img-fluid"
+                                                height="400px"
+                                                src="https://finbyz.tech/files/website-development.svg"
+                                                title="Website Development"></div>
+                                        <p class="p-3">Your website is the first
+                                            impression that any person gets when
+                                            they
+                                            search for your company. It is
+                                            supposed to be the most interesting
+                                            and
+                                            informative part of your business.
+                                            We build dynamic websites, with
+                                            advanced
+                                            technology and development experts
+                                            as per your company needs.</p>
+                                        <div class="text-left pl-4 pr-4">
+                                            <a
+                                                href="https://finbyz.tech/website-development"><button
+                                                    class="btn finbyz-button">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="slider-img d-none d-sm-flex justify-content-center"><img
+                                                alt="Website Development"
+                                                class="img-fluid" height="400px"
+                                                src="https://finbyz.tech/files/website-development.svg"
+                                                title="Website Development"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slide1">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <h2 class="pl-3 pr-3 text-left">Data<br>
+                                            <span>Analytics</span></h2>
+                                        <div
+                                            class="slider-img d-block d-sm-none"><img
+                                                alt="Data Analysis"
+                                                class="img-fluid"
+                                                height="400px"
+                                                src="https://finbyz.tech/files/data-analytics.svg"
+                                                title="Data Analysis"></div>
+                                        <p class="p-3">The Cutting-Edge Data
+                                            Analytics can unlock business values
+                                            that are
+                                            hidden in your data. The Data
+                                            Scientists in our Analytics group
+                                            can expertly
+                                            apply a range of advanced methods to
+                                            develop your business insights and
+                                            solve
+                                            some of your business problems that
+                                            go past the conventional Business
+                                            Intelligence area.</p>
+                                        <div class="text-left pl-4 pr-4">
+                                            <a
+                                                href="https://finbyz.tech/data-analytics"><button
+                                                    class="btn finbyz-button">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="slider-img d-none d-sm-flex justify-content-center"><img
+                                                alt="Data Analysis"
+                                                class="img-fluid" height="400px"
+                                                src="https://finbyz.tech/files/data-analytics.svg"
+                                                title="Data Analysis"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slide1">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <h2 class="pl-3 pr-3 text-left">IT<br>
+                                            <span>Consulting</span></h2>
+                                        <div
+                                            class="slider-img d-block d-sm-none"><img
+                                                alt="IT Consulting"
+                                                class="img-fluid"
+                                                height="400px"
+                                                src="https://finbyz.tech/files/it-consulting.svg"
+                                                title="IT Consulting"></div>
+                                        <p class="p-3">With our IT expertise and
+                                            in-depth understanding of the
+                                            industry, we
+                                            can help you to develop or update
+                                            your strategies and refine your
+                                            goals which
+                                            will help you to maximize your
+                                            chances of success.</p>
+                                        <div class="text-left pl-4 pr-4">
+                                            <a
+                                                href="https://finbyz.tech/it-consulting"><button
+                                                    class="btn finbyz-button">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="slider-img d-none d-sm-flex justify-content-center"><img
+                                                alt="IT Consulting"
+                                                class="img-fluid" height="400px"
+                                                src="https://finbyz.tech/files/it-consulting.svg"
+                                                title="IT Consulting"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/bootstrap.min.js"></script>
+        <script src="../scripts/aos.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../scripts/owl.carousel.min.js"></script>
+        <script src="../scripts/script.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+        <script>
+        // jQuery script
+        $(document).ready(function() {
+            const $navbar = $('#navbar');
+
+            if ($navbar.length) { // Check if the element exists
+                $(window).on('scroll', function() {
+                    if ($(window).scrollTop() > 50) { // Check scroll position
+                        $navbar.addClass('scrolled'); // Add class
+                    } else {
+                        $navbar.removeClass('scrolled'); // Remove class
+                    }
+                });
+            } else {
+                console.error('Navbar element not found');
+            }
+        });
+    </script>
+
+        <script>
+$(document).ready(function () {
+  var mainOwl = $('.owl-carousel.main-carousel');
+	mainOwl.owlCarousel({
+		autoplay: true,
+		smartSpeed: 800,
+		loop: true,
+		nav: false,
+		navText: false,
+		dots: true,
+		mouseDrag: true,
+		margin: 10,
+		navigation: true,
+		navigationText: ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>', '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
+		slideBy: 1,
+		items: 1,
+	});
+
+	// tween for Main Slider Owl change 
+	mainOwl.on('changed.owl.carousel', function (e) {
+		var scrollController = new ScrollMagic.Controller();
+
+		$(".owl-carousel.main-carousel #first-p").each(function () {
+			var fadeUpScene = new ScrollMagic.Scene({
+				triggerElement: this,
+				triggerHook: 1
+			})
+				.setTween(TweenMax.from(this, 1, { scale: 0, ease: Power1.easeIn, delay: 1 }))
+				.addTo(scrollController)
+		})
+		$(".owl-carousel.main-carousel .slide1 img").each(function () {
+			var fadeUpScene = new ScrollMagic.Scene({
+				triggerElement: this,
+				triggerHook: 1
+			})
+				.setTween(TweenMax.from(this, 1, { x: 50, opacity: 0, ease: Power1.easeOut, delay: 0.5 }))
+				.addTo(scrollController)
+		})
+
+	});
+
+});
+</script>
+    </body>
+</html>

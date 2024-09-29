@@ -1,0 +1,203 @@
+.home-page {
+  .map-content {
+    background-color: $gray2;
+    font-weight: 400;
+
+    .map-card {
+      position: relative;
+      border-radius: $main-border;
+      padding: 20px;
+      padding-bottom: 35px;
+    }
+    .map-card::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 15px; /* سمك الحد السفلي */
+      background: linear-gradient(90deg, #020024 0%, #115846 0%, #cc903f 100%);
+      border-bottom-left-radius: $main-border;
+      border-bottom-right-radius: $main-border;
+    }
+
+    .divider {
+      width: 3px;
+      padding: 0;
+      height: 327px;
+      background: #d7e9e4;
+      opacity: 1;
+      position: absolute;
+      top: 24px;
+      left: 764px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      overflow: hidden;
+    }
+    .meeting {
+      direction: rtl;
+      span {
+        color: #515151;
+      }
+      h2 {
+        font-weight: 400;
+        // padding: 14px 0px;
+        padding-top: 1.37rem;
+        font-size: 27px;
+        color: $black;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 160%;
+      }
+      p {
+        color: #515151;
+        font-weight: 500;
+        fbutton-textont-size: 1rem;
+      }
+    }
+    .map-img {
+      height: 335px;
+      max-height: 335px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .field-follow-ups {
+    .title-wrapper {
+      h2 {
+        padding-bottom: 3rem !important;
+      }
+    }
+
+    .container-follow {
+      position: relative;
+
+      .wrapper-follows {
+        position: relative;
+        height: 595px;
+        overflow: hidden; // Ensure hidden content
+        &:hover {
+          height: 400px; // Change height on hover
+          .container-image-follows {
+            height: 400px; // Ensure image height changes with card
+          }
+          .overlay {
+            opacity: 1; // Show overlay on hover
+          }
+        }
+        .container-image-follows {
+          height: 100%;
+          overflow: hidden; // Hide excess content
+          transition: height 1s ease-out; // Smooth transition for image height
+        }
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: flex-end; // Center content vertically
+          justify-content: center; // Center content horizontally
+          color: $pure-white;
+          width: 100%;
+          height: 100%; // Cover full height of the card
+          opacity: 0; // Hide overlay initially
+          transition: opacity 1s ease; // Smooth transition for opacity
+          opacity: 1; // Hide overlay initially
+        }
+        .news-details {
+          p {
+            margin: 105px 0;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+        .news-button {
+          position: absolute;
+          bottom: 10px; // Distance from bottom
+          left: 50%;
+          transform: translateX(-50%); // Center button horizontally
+          padding: 10px 20px;
+          background-color: red;
+          color: $pure-white;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          z-index: 10; // Ensure button is above other elements
+        }
+      }
+
+      .news-button {
+        position: absolute;
+        bottom: -90px; // Distance from bottom
+        left: 50%;
+        transform: translateX(-50%); // Center button horizontally
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+      }
+    }
+  }
+  .achievements-section {
+    background-color: $off-white;
+    background-color: #f8f8f8;
+    background-image: url(../../images/home/background-im.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-position 0.5s ease;
+    &:hover {
+      background-position: left;
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: $main-border;
+      }
+      .overlay {
+        background-color: $gold1;
+        color: $pure-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.28981rem;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s;
+        border-radius: $main-border;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        opacity: 1;
+      }
+      // &:hover .overlay {
+      //   opacity: 1;
+      // }
+    }
+  }
+  .partner-section {
+    .title-wrapper {
+      h3 {
+        padding-bottom: 3rem !important;
+      }
+    }
+
+    .partner-image {
+      width: 210px;
+      img {
+        width: 100%;
+        height: 80px !important;
+      }
+    }
+  }
+}

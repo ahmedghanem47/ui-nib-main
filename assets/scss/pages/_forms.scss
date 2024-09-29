@@ -1,0 +1,107 @@
+.bg-forms {
+  height: 58px;
+  width: 100%;
+  background: linear-gradient(90deg, #020024 0%, #115846 0%, #cc903f 100%), url("../../images/home/bg-forms.svg");
+  // background-size: cover;
+  background-blend-mode: overlay;
+  border-top-left-radius: $main-border;
+  border-top-right-radius: $main-border;
+}
+
+form {
+  padding: 43px;
+  border: 1px solid $brand-primary;
+  border-top: none;
+  border-bottom-left-radius: $main-border;
+  border-bottom-right-radius: $main-border;
+
+  label {
+    font-size: medium;
+    color: $brand-primary;
+
+    span {
+      color: red;
+    }
+  }
+
+  .form-group {
+    padding: 10px;
+  }
+
+  .form-check-label {
+    margin-right: 1.25rem;
+  }
+
+  .btn-primary {
+    background-color: $brand-primary;
+    border: none;
+
+    &:hover {
+      background-color: darken($brand-primary, 10%);
+    }
+  }
+}
+
+// .custom-input-wrapper {
+//   display: flex;
+//   align-items: center;
+//   border: none;
+//   border-radius: 5px;
+// }
+// .custom-input {
+//   font-size: 24px;
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 5px 0 0 5px;
+//   outline: none;
+//   flex: 1;
+// }
+
+// .custom-icon {
+//   font-size: 24px;
+//   color: #333;
+//   padding: 0 10px;
+//   border-radius: 0 5px 5px 0;
+//   background-color: #f0f0f0;
+// }
+
+.custom-input-wrapper {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: var(--RoungMD, 0.625rem);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  .custom-input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    display: inline-flex;
+    padding: 0.8125rem 1.25rem 0.8125rem 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 27.3125rem;
+
+    &::placeholder {
+      color: #999;
+      font-size: 16px;
+      font: 200;
+    }
+  }
+
+  .bx {
+    position: absolute;
+    left: 20px;
+    /* تعديل الموقع حسب حاجتك */
+    top: 53%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    pointer-events: none;
+    /* لمنع الأيقونة من التفاعل مع الأحداث */
+  }
+}

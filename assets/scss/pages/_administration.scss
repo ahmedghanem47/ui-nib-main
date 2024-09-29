@@ -1,0 +1,46 @@
+// .admin-container {
+//   text-align: center;
+
+//   h5 {
+//     color: $brand-gold;
+//   }
+// }
+.administration-pages {
+  .admin-container {
+    text-align: center;
+
+    .admin-img-container {
+      padding: 10px 0;
+      // text-align: center;
+      // width: 240px;
+      // height: 300px;
+      .imageBorde-container {
+        &:hover {
+          background-color: red;
+          &::after {
+            content: "قبل";
+            position: absolute;
+            left: -50px; /* يحدد المسافة من الجنب الأيسر */
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #115846;
+            padding: 5px;
+            box-shadow: -19px 12px 0px -2px #115846;
+          }
+          &::before {
+            box-shadow: -19px 12px 0px -2px #115846;
+          }
+        }
+      }
+      img {
+        border-radius: $main-border;
+        // width: 100%;
+        // height: 100%;
+      }
+    }
+
+    h5 {
+      color: $brand-gold;
+    }
+  }
+}

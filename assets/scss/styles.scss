@@ -1,0 +1,21 @@
+﻿//abstracts
+@import "abstracts/variables";
+@import "abstracts/fonts";
+// base
+@import "base/common";
+//components
+@import "components/main-banner";
+@import "components/preloader";
+@import "components/button";
+@import "components/carousel";
+@import "components/sub-banner";
+@import "components/sub-banner2";
+@import "components/tendersCard";
+@import "components/breadcrumb";
+// layout
+@import "layout/header";
+@import "layout/footer";
+//vendors
+@import "plugins/owl.carousel";
+//pages
+@import "pages/index";

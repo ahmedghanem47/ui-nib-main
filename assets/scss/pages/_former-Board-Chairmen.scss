@@ -1,0 +1,47 @@
+.former-board-page {
+  padding-top: 80px ;
+  span {
+    margin-bottom: 5px;
+  }
+  h1 {
+    color: $brand-primary;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .img-container {
+    height: 315px;
+    max-height: 315px;
+    width: 425px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 6px;
+    cursor: pointer;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: $main-border;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 2px; 
+      background: linear-gradient(90deg, #cc903f, #115846);
+      border-radius: $main-border;
+      mask-composite: exclude;
+      z-index: -1;
+    }
+  }
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+}

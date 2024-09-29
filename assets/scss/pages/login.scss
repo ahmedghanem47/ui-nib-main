@@ -1,0 +1,221 @@
+// .sign-page {
+//     .h-custom {
+//         .custom-carousel {
+//             padding: 5rem 5rem 0;
+//             .carousel-item{
+//                 img{
+//                     height: 210px;
+//                 }
+//             }
+//         }
+//     }
+// }
+// .sign {
+//     color: black;
+//     img {
+//         width: 50px;
+//         height: 50px;
+//     }
+// }
+// .p-t-12 {
+//     padding: 33px 0;
+// }
+// .sign-form {
+//     margin-top: 10px;
+//     label {
+//         color: #878483;
+//         font-size: 1rem;
+//     }
+//     input {
+//         padding: 0.9rem 0.75rem;
+//     }
+// }
+// .sec-sing {
+//     width: 50%;
+//     &:first-of-type {
+//         background-color: rgba(188, 223, 167, 0.2);
+//         height: 88vh;
+//     }
+//     &:last-of-type {
+//         padding: 1rem 8rem 1rem 2rem;
+//     }
+// }
+// .link-sign {
+//     color: #84c356;
+// }
+// .form-control.error {
+//     border-color: red;
+// }
+// .form-control:focus {
+//     border-color: #84c356;
+// }
+// .password-count {
+//     float: right;
+//     position: relative;
+//     bottom: 24px;
+//     right: 10px;
+// }
+// .help-block {
+//     position: relative;
+//     height: 5px;
+//     background: #ddd;
+//     margin: 10px auto 20px;
+//     border-radius: 3px;
+
+//     &::before,
+//     &::after {
+//         content: "";
+//         height: inherit;
+//         background: transparent;
+//         display: block;
+//         border-color: #fff;
+//         border-style: solid;
+//         border-width: 0 5px 0 5px;
+//         position: absolute;
+//         width: 25%;
+//         z-index: 10;
+//     }
+//     &:before {
+//         left: 0;
+//     }
+//     &:after {
+//         right: 25%;
+//     }
+//     .help-block-fill {
+//         background: transparent;
+//         height: inherit;
+//         position: absolute;
+//         width: 0;
+//         border-radius: inherit;
+//         transition: width 0.5s ease-in-out, background 0.25s;
+//     }
+//     .help-red-fill {
+//         background: darkred;
+//         width: 25%;
+//     }
+//     .help-orangered-fill {
+//         background: orangered;
+//         width: 50%;
+//     }
+//     .help-orange-fill {
+//         background: orange;
+//         width: 75%;
+//     }
+//     .help-green-fill {
+//         background: green;
+//         width: 100%;
+//     }
+// }
+// .progress-bar {
+//     border-radius: 5px;
+// }
+// .input-error-danger {
+//     border-color: #721c24 !important;
+// }
+// .form-check-input[type="radio"]:checked {
+//     background-color: #84C356; /* Change this to the desired color */
+//   }
+// @media screen and (max-width: 1399px) {
+// }
+
+// @media screen and (max-width: 1199px) {
+//     .sec-sing {
+//         &:first-of-type {
+//             height: 170vh !important;
+//         }
+//     }
+// }
+// @media screen and (max-width: 991px) {
+//     .sign-page {
+//         #login-carousel {
+//             margin: 0rem 0 116px 0;
+//             width: 100%;
+//         }
+//         .d-flex {
+//             flex-direction: column;
+//             .sec-sing {
+//                 width: 100%;
+//             }
+//         }
+
+//         .sign {
+//             font-size: 13px;
+//             display: block;
+//         }
+//         .sec-sing {
+//             margin-bottom: 5rem;
+//             &:first-of-type {
+//                 height: 100vh !important;
+//             }
+//             &:last-of-type {
+//                 padding: 2rem;
+//             }
+//         }
+//     }
+// }
+
+
+// #maps-carousel {
+//     margin: 2rem auto;
+//     width: 80%;
+//     .carousel-indicators {
+//       right: 0 !important;
+//       bottom: -6rem !important;
+  
+//       button {
+//         background: #bcdfa7;
+//         width: 25px;
+//         height: 5px;
+//         border-radius: 50%;
+//         margin: 0 13px;
+//         &.active {
+//           background: #a3c891;
+//           border-radius: 22px;
+//           width: 100px;
+//         }
+//         &:hover {
+//           background: #a3c891 !important;
+//         }
+//       }
+//     }
+
+//   }
+//   .owl-carousel {
+//     .owl-dots {
+//       display: flex;
+//       justify-content: center;
+//       margin-top: 55px;
+//       button {
+//         display: inline-block;
+//         width: 17px;
+//         height: 8px;
+//         border-radius: 50%;
+//         background-color: $pur;
+//         margin: 0 5px;
+//         cursor: pointer;
+//         &.active {
+//           background-color: #0f75c0;
+//         }
+//       }
+//     }
+//   }
+  
+//   .owl-carousel .item img {
+//     width: 100%;
+//     height: auto;
+//   }
+//   footer {
+//     padding: 1.2rem 0;
+//     align-items: end;
+//     color: $brand-gray;
+//   }
+  
+//   .service-item {
+//     .image {
+//       height: 170px !important;
+//     }
+//   }
+// @media screen and (max-width: 767px) {
+// }
+// @media screen and (max-width: 580px) {
+// }

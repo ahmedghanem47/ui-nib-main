@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/css/styles.css" />
+    <title>Home</title>
+</head>
+<style>
+
+header {
+    background-color: transparent !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    background-color: transparent !important;
+    color: red;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: red !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.scrolled {
+    background-color: red; /* Change this color on scroll */
+}
+</style>
+<body dir="rtl">
+
+    <!-- <div class="loader-wrapper">
+        <div class="loader">
+            <div class="preloader_inner">0</div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div> -->
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <!-- Start Banner Hero -->
+        <div  class="sub_banner-wrapper">
+            <div class="container">
+                <h1 class="sub-banner-heading">تسجيل مورد</h1>
+                <p>لضمان سير العملية بسلاسة، يرجى إرفاق جميع المستندات المطلوبة مع الطلبات ذات الصلة.</p>
+
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <!-- End Banner Hero -->
+
+        <div class="form-pages">
+            <div class="container my-5">
+
+                <div class="bg-forms">
+                 
+                </div>
+                <form>
+                    <div class="form-row row">
+                        <div class="form-group col-md-4">
+                            <label for="businessOwner">اسم صاحب النشاط <span>*</span></label>
+                            <input type="text" class="form-control" id="businessOwner" placeholder="اسم صاحب النشاط">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="activityType">نشاط الشركة أو المنشأة   <span>*</span></label>
+                            <input type="text" class="form-control" id="activityType" placeholder="نشاط الشركة أو المنشأة">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="memberDocs">أوراق مستندات العضوية <span>*</span></label>
+                            <input type="text" class="form-control" id="memberDocs" placeholder="أوراق مستندات العضوية">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="nationalID">الرقم القومي <span>*</span></label>
+                            <input type="text" class="form-control" id="nationalID" placeholder="الرقم القومي">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="commercialRegister">رقم السجل التجاري <span>*</span></label>
+                            <input type="text" class="form-control" id="commercialRegister" placeholder="رقم السجل التجاري">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="arabIndustryUnion">رقم مستند رقم الصناعة العربية <span>*</span></label>
+                            <input type="text" class="form-control" id="arabIndustryUnion" placeholder="رقم مستند رقم الصناعة العربية">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="chamberOfCommerce">أوراق مستندات من غرفة التجارة <span>*</span></label>
+                            <input type="text" class="form-control" id="chamberOfCommerce" placeholder="أوراق مستندات من غرفة التجارة">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="businessActivityDoc">أوراق مستندات من شغلة الأعمال <span>*</span></label>
+                            <input type="text" class="form-control" id="businessActivityDoc" placeholder="أوراق مستندات من شغلة الأعمال">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="taxCard">رقم الكارنيه الضريبي</label>
+                            <input type="text" class="form-control" id="taxCard" placeholder="رقم الكارنيه الضريبي">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="contact">أرقام التواصل <span>*</span></label>
+                            <input type="text" class="form-control" id="contact" placeholder="أرقام التواصل">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="partnersInfo">معلومات/موقع/بيانات الشركاء <span>*</span></label>
+                            <input type="text" class="form-control" id="partnersInfo" placeholder="معلومات/موقع/بيانات الشركاء">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="companyFax">رقم الفاكس الخاص بالشركة</label>
+                            <input type="text" class="form-control" id="companyFax" placeholder="رقم الفاكس الخاص بالشركة">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email">البريد الإلكتروني للشركة</label>
+                            <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني للشركة">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="notes">ملاحظات</label>
+                            <textarea class="form-control" id="notes" rows="3" placeholder="ملاحظات"></textarea>
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+
+                    <div class="form-check my-3">
+                        <input type="checkbox" class="form-check-input" id="agreement">
+                        <label class="form-check-label" for="agreement">
+                            أوافق على هذه الشروط
+                        </label>
+                    </div>
+                    <button type="submit" class="main-button login-btn">تسجيل مورد</button>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="overlay"></div>
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-4">
+                        <div class="search-bar">
+                            <input type="text" class="form-control" placeholder="ابحث في الموقع">
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="footer-details">
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">عن البنك</a></li>
+                        <li><a href="#">الخدمات</a></li>
+                        <li><a href="#">الإنجازات</a></li>
+                        <li><a href="#">النشطة</a></li>
+                        <li><a href="#">المتابعات الميدانية</a></li>
+                    </ul>
+                    <div class="contact-info">
+                        <p>تواصل معنا</p>
+                        <p>21207399 - 212038 <i class="fas fa-phone"></i></p>
+                        <p>قطعة 9 - قسم المقاولين العرب - الجبل <i class="fas fa-map-marker-alt"></i></p>
+                        <p>الدور - طريق النصر - مدينة نصر</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>جميع الحقوق محفوظة - بنك الاستثمار القومي - 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+ 
+    <script src="./style/vendor/owlCarousel/owl.carousel.min.js"></script>
+    <script src="./style/vendor/jQuery/jquery.min.js"></script>
+    <script src="./style/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./style/vendor/aos/aos.js"></script>
+    <script src="./style/vendor/bootstrap/js/"></script>
+    <script src="./style/js/script.js"></script>
+    <Script>
+$(document).ready(function() {
+    const $navbar = $('#navbar'); // Use jQuery to select the element
+
+    if ($navbar.length) { // Check if the element exists
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > 50) { // Check scroll position with jQuery
+                $navbar.addClass('scrolled'); // Add class
+            } else {
+                $navbar.removeClass('scrolled'); // Remove class
+            }
+        });
+    } else {
+        console.error('Navbar element not found');
+    }
+});
+    </Script>
+</body>
+
+</html>

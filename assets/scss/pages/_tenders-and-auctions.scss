@@ -1,0 +1,31 @@
+.tenders-and-auctions-page {
+  .map-content {
+    background-color: $gray2;
+    font-weight: 400;
+    padding: 14px 0px;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 15px; 
+      background: linear-gradient(90deg, #020024 0%, #115846 0%, #cc903f 100%);
+      border-bottom-left-radius: $main-border;
+      border-bottom-right-radius: $main-border;
+    }
+
+
+    .map-card {
+      position: relative;
+      border-radius: $main-border;
+      padding: 20px;
+      padding-bottom: 35px;
+
+     
+    }
+
+ 
+
+}
+}

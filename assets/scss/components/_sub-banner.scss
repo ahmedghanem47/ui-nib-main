@@ -1,0 +1,15 @@
+.sub_banner-wrapper {
+  background-image: url("./../../images/home/sub-banner.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 5rem 0;
+  position: relative;
+  .sub-banner-content {
+    padding: 50px 0;
+  }
+}
+.sub-banner-heading {
+  color: $brand-primary;
+  font-size: 42px;
+  font-weight: 400;
+}
